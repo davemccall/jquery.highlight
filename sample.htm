@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" href="sample.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.color.js"></script>
+	<script src="jquery.highlight.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#somebutton").click(function () {
+				$("#sometext").highlight();
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="container">
+
+	<p>
+		<span id="sometext">This is some text</span>
+	</p>
+	
+	<input id="somebutton" type="button" value="click me" />
+
+</div>
+
+</body>
+</html>
